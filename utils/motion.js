@@ -159,3 +159,43 @@ export const footerVariants = {
     },
   },
 };
+export const mapPerson = (delay) => ({
+  hidden: {
+    opacity: 0,
+    y: -50,
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 140,
+    },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 80,
+      delay,
+    },
+  },
+});
+export const mapImg = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 140,
+    },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 80,
+      delay: 0.8,
+    },
+  },
+};
